@@ -72,6 +72,10 @@ function reset(){
     //새로운 번호 생성
     pickRandomNum();
     resultArea.textContent = "숫자를 입력해주세요";
+    chances = 5;
+    chanceArea.textContent = `남은 기회: ${chances}회`
+    playButton.disabled = false;
+    history = new Array();
 }
 
 pickRandomNum()
