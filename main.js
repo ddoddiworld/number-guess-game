@@ -53,6 +53,13 @@ function play(){
         chances --;
         num.textContent = `${chances}`;
     }
+
+    if(chances == 0){
+        playButton.style.color ="#ffffff";
+        playButton.style.background = "#444444";
+        playButton.disabled = true;
+        return;
+    }
 }
 
 function reset(){
