@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 맞추기 게임</title>
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <img class="mainVisual" src="images/chunsik.png" alt="mainVisual">
+            <h1>숫자 맞추기 게임</h1>
+            <h2>1부터 100까지의 숫자 중에서 맞추기!</h2>
+        </header>
+        <main>
+            <p id="chance-area">남은 기회 <span class="strong">5</span>회</p>
+            <div class="content">
+                <input type="number" id="user-input">
+                <button id="play-button">Go!</button>
+            </div>
+            <P id="result-area">숫자를 입력해주세요</p>
+            <button id="reset-button"><i class="xi-rotate-left"></i>다시하기</button>
+        </main>
+        <footer>
+            <p>&copy;ddoddi</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

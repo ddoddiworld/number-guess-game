@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+html {
+    font-size: 20px;
+    /* 1rem */
+}
+
+* {
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif;
+}
+
+/* header */
+.mainVisual {
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffcc00;
+    padding: 0 0 10px;
+}
+
+h2 {
+    font-size: 1rem;
+    color: #996633;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#chance-area {
+    padding: 10px 0;
+}
+
+#chance-area .strong {
+    font-size: 2rem;
+    color: red;
+    padding: 0 5px;
+}
+
+.content {
+    font-size: 0;
+}
+
+#user-input {
+    width: 250px;
+    height: 50px;
+    border: 3px solid #ffcc00;
+    border-radius: 30px 0 0 30px;
+    font-size: 1.2rem;
+    font-family: 'Jua', sans-serif;
+}
+
+/* 결과값이 틀렸을때 input박스 바운스 */
+input:invalid {
+    animation: shake 300ms;
+}
+
+@keyframes shake {
+    25% {
+        transform: translateX(4px);
+    }
+
+    50% {
+        transform: translateX(-4px);
+    }
+
+    75% {
+        transform: translateX(4px);
+    }
+}
+
+#play-button {
+    height: 50px;
+    width: 100px;
+    border-radius: 0 30px 30px 0;
+    background: #996633;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Jua', sans-serif;
+}
+
+#play-button:hover {
+    cursor: pointer;
+}
+
+#result-area {
+    font-size: 2.2rem;
+    padding: 30px 0 20px;
+    color: hotpink;
+}
+
+#reset-button {
+    cursor: pointer;
+    font-family: 'Jua', sans-serif;
+    background: gray;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.xi-rotate-left {
+    font-size: 1.2rem;
+    padding-right: 4px;
+    vertical-align: middle;
+}
+
+/* footer */
+footer>p {
+    padding: 30px 0 0;
+    font-size: 1rem;
+}
+
+/* 반응형 860px~ */
+@media screen and (min-width: 860px) {
+    /* header */
+    .mainVisual {
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #ffcc00;
+        padding: 0 0 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: #996633;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    #chance-area {
+        padding: 20px 0;
+    }
+
+    #chance-area .strong {
+        font-size: 2rem;
+        color: red;
+        padding: 0 5px;
+    }
+
+    .content {
+        font-size: 0;
+    }
+
+    #user-input {
+        width: 500px;
+        height: 50px;
+        border: 3px solid #ffcc00;
+        border-radius: 30px 0 0 30px;
+        font-size: 1.2rem;
+        font-family: 'Jua', sans-serif;
+    }
+
+    /* 결과값이 틀렸을때 input박스 바운스 */
+    input:invalid {
+        animation: shake 300ms;
+    }
+
+    @keyframes shake {
+        25% {
+            transform: translateX(4px);
+        }
+
+        50% {
+            transform: translateX(-4px);
+        }
+
+        75% {
+            transform: translateX(4px);
+        }
+    }
+
+    #play-button {
+        height: 50px;
+        width: 100px;
+        border-radius: 0 30px 30px 0;
+        background: #996633;
+        color: white;
+        font-size: 1rem;
+        font-family: 'Jua', sans-serif;
+    }
+
+    #play-button:hover {
+        cursor: pointer;
+    }
+
+    #result-area {
+        font-size: 3rem;
+        padding: 30px 0;
+        color: hotpink;
+    }
+
+    #reset-button {
+        cursor: pointer;
+        font-family: 'Jua', sans-serif;
+        background: gray;
+        border: 2px solid gray;
+        border-radius: 20px;
+        padding: 5px 10px;
+        color: white;
+    }
+
+    .xi-rotate-left {
+        font-size: 1.2rem;
+        padding-right: 4px;
+        vertical-align: middle;
+    }
+
+    /* footer */
+    footer>p {
+        padding: 30px 0 0;
+        font-size: 1rem;
+    }
+}
